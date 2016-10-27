@@ -1,0 +1,35 @@
+
+<header>
+  <div id="primary" ng-controller="HeaderCtrl" ng-show="(isActivePage('/') || isActivePage('/login') || isActivePage('/reset_password'))">
+    <a href="#/"><img id="logo" src="img/socure-logo.png" style="margin-bottom: 5px;"/></a>
+  </div>
+  <div id="primary" ng-controller="HeaderCtrl" ng-show="!(isActivePage('/') || isActivePage('/login') || isActivePage('/reset_password'))">
+    <a href="#/"><img id="logo" src="img/socure-logo.png"/></a>
+    <nav>
+      <a class="main" ng-class="{ active: (isActive('overview') || isActive('performance') || isActive('user_demographics') || isActive('results'))}" href="#overview">Overview</a>
+      <a class="main" ng-class="{ active: (isActive('account_administration') || isActive('users'))}" href="#account_administration">Accounts</a>
+      <!-- <a class="main" ng-class="{ active: isActive('/users')}" href="#users">Users</a> -->
+      <a class="main" ng-class="{ active: (isActive('transactions') || isActive('create_transaction') || isActive('transaction_result'))}" href="#transactions">Transactions</a>
+      <a class="main" ng-class="{ active: (isActive('batch') || isActive('pss_upload') || isActive('pss_map') || isActive('pss_validate') || isActive('pss_findscore') || isActive('pss_getresult'))}" href="#batch">Batch</a>
+      <!-- <a class="main" href="#usage">Usage</a></li> -->
+      <a class="main" ng-class="{ active: isActive('settings')}" href="#settings">Settings</a>
+      <a class="main" ng-class="{ active: isActive('support')}" href="#support">Support</a></li>
+
+    </nav>
+    <!-- <a class="account" href="" ng-show="!(isActive('/') || isActive('/authenticate'))"><img src="img/user-icon.png"/>
+          Account Name<span class="arrow-down-f-pro"></span></a> -->
+    <div class="account" ng-show="!(isActivePage('/') || isActivePage('/login') || isActivePage('/reset_password'))">
+      <a href=""><img src="img/user-icon.png"/></a>
+      <div id="primary_nav_wrap">
+        <ul>
+          <li><a href="Javascript:void(0);">{{$storage.sessionData.user.firstName}}<span class="arrow-down-f-pro"></span></a>
+            <ul>
+              <li><a href="Javascript:void(0);">Settings</a></li>
+              <li><a href="Javascript:void(0);" ng-click="signout()">Signout</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
