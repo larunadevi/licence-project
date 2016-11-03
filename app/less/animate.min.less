@@ -1,5 +1,4 @@
-@charset "UTF-8";
-/*!
+@charset "UTF-8";/*!
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license
 
@@ -12,7 +11,7 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 @-webkit-keyframes "bounce" {
-	0%,20%,50%,80%,100% {
+	0%,100%,20%,50%,80% {
 		-webkit-transform: translateY(0);
 		transform: translateY(0);
 	}
@@ -26,7 +25,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	}
 }
 @keyframes "bounce" {
-	0%,20%,50%,80%,100% {
+	0%,100%,20%,50%,80% {
 		-webkit-transform: translateY(0);
 		-ms-transform: translateY(0);
 		transform: translateY(0);
@@ -43,7 +42,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	}
 }
 @-webkit-keyframes "flash" {
-	0%,50%,100% {
+	0%,100%,50% {
 		opacity: 1;
 	}
 	25%,75% {
@@ -51,14 +50,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	}
 }
 @keyframes "flash" {
-	0%,50%,100% {
+	0%,100%,50% {
 		opacity: 1;
 	}
 	25%,75% {
 		opacity: 0;
 	}
 }
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 @-webkit-keyframes "pulse" {
 	0% {
 		-webkit-transform: scale(1);
@@ -268,7 +266,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		transform: scale(1) rotate(0);
 	}
 }
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 @-webkit-keyframes "wobble" {
 	0% {
 		-webkit-transform: translateX(0%);
@@ -2116,7 +2113,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		opacity: 0;
 	}
 }
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 @-webkit-keyframes "rollIn" {
 	0% {
 		opacity: 0;
@@ -2143,7 +2139,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		transform: translateX(0px) rotate(0deg);
 	}
 }
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 @-webkit-keyframes "rollOut" {
 	0% {
 		opacity: 1;

@@ -1,131 +1,255 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="myapp">
+<html lang="en" ng-app="myapp" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <title>Licence Generator</title>
-  <link href="styles/animate.min.css" rel="stylesheet">
-  <link href="styles/font-awesome.min.css" rel="stylesheet">
-   <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="styles/lightbox.css" rel="stylesheet">
-  <link href="styles/main.css" rel="stylesheet">
-  <link id="css-preset" href="styles/presets/preset1.css" rel="stylesheet">
-  <link href="styles/responsive.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Licence Generator</title>
+	<!-- Angular link -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js">
+      </script>
+	<!-- core CSS -->
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/font-awesome.min.css" rel="stylesheet">
+    <link href="styles/animate.min.css" rel="stylesheet">
+    <link href="styles/prettyPhoto.css" rel="stylesheet">
+ 
+    <link href="styles/responsive.css" rel="stylesheet">
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<!-- <link rel="stylesheet" type="text/css" href="css/styles_pink.css" /> -->
+ <link href="styles/main.css" rel="stylesheet" id="color-switcher"> 
+<script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <style>
+  .pollSlider{
+    position:absolute;
+    height:75px;
+    background:#d2d2d2;
+    width:110px;
+   
+       margin-left: -110px;
+	    z-index: 999;
+}
+#pollSlider-button{
+   position:fixed; 
+    width:30px;
+    background:#000;
+    top:120px;
+	    z-index: 999;
+}
+#pollSlider-button .fa-bars
+{
+color: #fff;
+    position: relative;
+    left: 5px;
+    top: 2px;
+    font-size: 20px;
+}
+  </style>
+ 
+<script>
+$(document).ready(function()
+{
+  /*$('#pollSlider-button').click(function() {
+    if($(this).css("margin-right") == "200px")
+    {
+        $('.pollSlider').animate({"margin-right": '-=200'});
+        $('#pollSlider-button').animate({"margin-right": '-=200'});
+    }
+    else
+    {
+        $('.pollSlider').animate({"margin-right": '+=200'});
+        $('#pollSlider-button').animate({"margin-right": '+=200'});
+    }
 
 
- <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
- <!-- Angularjs link -->
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-route.min.js"></script>
-
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
-  <link rel="shortcut icon" href="img/logo1.png">
-
+  }); */
+  $('#pollSlider-button').click(function() {
+	
+	if($(".pollSlider").css("margin-left") == "-110px")
+    {
+        $('.pollSlider').animate({"margin-left": '+=110'});
+        //$('#pollSlider-button').animate({"margin-left": '-=200'});
+    }
+    else
+    {
+        $('.pollSlider').animate({"margin-left": '-=110'});
+        //$('#pollSlider-button').animate({"margin-left": '+=200'});
+    }
+  
+  });
+  
+ });     
+</script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+   <!--  <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/logo1.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/logo1.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/logo1.png">
+    <link rel="apple-touch-icon-precomposed" href="images/logo1.png"> -->
+	 <link rel="shortcut icon" href="img/logo1.png">
 </head><!--/head-->
 
-<body >
-  <div class="">
-  <header id="home" ng-app="myapp" >
+<body class="homepage" >
 
-  <div class=" header">
-  <div class="container">
-  <nav id="main-menu" class="navbar navbar-default navbar-fixed-top" role="banner">
+    <header id="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-4">
+                        <div class="top-number"><p><i class="fa fa-phone-square"></i>  +0123 456 70 90</p></div>
+                    </div>
+                    <div class="col-sm-6 col-xs-8">
+                       <div class="social">
+                            <ul class="social-share">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                            </ul>
+                            <div class="search">
+                                <form role="form">
+                                    <input type="text" class="search-form" autocomplete="off" placeholder="Search">
+                                    <i class="fa fa-search"></i>
+                                </form>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+            </div><!--/.container-->
+        </div><!--/.top-bar-->
+
+        <nav class="navbar navbar-inverse" role="banner">
             <div class="container">
                 <div class="navbar-header">
-				<div class="col-sm-4 mobilecrypto" >
-				<img ng-src="img/logo1.png" class="mobilecrypto">
-<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
-                            class="icon-bar"></span> <span class="icon-bar"></span></button>
-		</div>
-
-                    </div>
-                <div class="navbar-collapse navbar-right collapse in" aria-expanded="true">
-					<ul>
-						<li> <a href="#">Licence<i class='fa fa-angle-down'></i></a>
-							<ul>
-								<li><i class="icon-file" aria-hidden="true"><a data-toggle="modal" data-target="#basicModal" href="#">Create</a></i></li>
-								<li><i class="icon-folder-open" aria-hidden="true"><a data-toggle="tab" ng-click='data="a"' href="#">List All</a></i></li>
-							</ul>
-						</li>
-						<li class='sub-menu'> <a href="#">Product<i class='fa fa-angle-down'></i></a>
-							<ul>
-								<li><i class="icon-file" aria-hidden="true"><a data-toggle="modal" data-target="#largeModal" href="#">Create</a></i></li>
-								<li><i class="icon-folder-open" aria-hidden="true"><a ng-click='data="c"' data-toggle="tab" href="#">List All</a></i></li>
-							</ul>
-						</li>
-
-					</ul>
-                    <!-- <ul class="nav navbar-nav">
-                        <li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown"  href="#">Licence<span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><i class="icon-file" aria-hidden="true"><a data-toggle="modal" data-target="#basicModal" >&nbsp;Create</a></i></li>
-						<li><i class="icon-folder-open" aria-hidden="true"><a data-toggle="tab" ng-click='data="a"' href="#licence-list">&nbsp;List All</a></i></li>
-					</ul>
-				</li>
-				 <li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Product  <span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><i class="icon-file" aria-hidden="true"><a data-toggle="modal" data-target="#largeModal">&nbsp;Create</a></i></li>
-						<li><i class="icon-folder-open" aria-hidden="true"><a ng-click='data="c"' data-toggle="tab" href="">&nbsp;List All</a></i></li>
-					</ul>
-				</li>
-                    </ul> -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="img/logo1.png" alt="logo">Licence Generator</a>
                 </div>
-            </div>
-        </nav>
-		<div class="shell">
-		<div class="col-sm-4 mobilecrypto" >
-				<h2><img ng-src="img/logo1.png" class="mobilecrypto"> Licence Generator</h2>
-		</div>
-		<div class="col-sm-8" >
-			<nav>
+				
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="active" ><a href="index.html">Home</a></li>
+                        <!-- <li><a href="about-us.html">About Us</a></li> -->
+                        <!-- <li><a href="services.html">Services</a></li> -->
+                       
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Licence <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a data-toggle="modal" data-target="#basicModal" href="#">Create</a></li>
+                                <li><a href="pricing.html" data-toggle="tab" ng-click='data="a"'>List All</a></li>
+                          
+                            </ul>
+                        </li>
+						<li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a data-toggle="modal" data-target="#largeModal" href="#">Create</a></li>
+                                <li><a href="pricing.html" ng-click='data="c"' data-toggle="tab">List All</a></li>
+                          
+                            </ul>
+                        </li>
+                                              
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+		
+    </header><!--/header-->
+		
+    <section id="main-slider" class="no-margin">
+        <div class="carousel slide">
+            <ol class="carousel-indicators">
+                <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+                <li data-target="#main-slider" data-slide-to="1"></li>
+                <li data-target="#main-slider" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
 
-					<ul>
-						<li> <a href="#">Licence<i class='fa fa-angle-down'></i></a>
-							<ul>
-								<li><i class="icon-file" aria-hidden="true"><a data-toggle="modal" data-target="#basicModal" href="#">Create</a></i></li>
-								<li><i class="icon-folder-open" aria-hidden="true"><a data-toggle="tab" ng-click='data="a"' href="#main-product">List All</a></i></li>
-							</ul>
-						</li>
-						<li class='sub-menu'> <a href="#">Product<i class='fa fa-angle-down'></i></a>
-							<ul>
-								<li><i class="icon-file" aria-hidden="true"><a data-toggle="modal" data-target="#largeModal" href="#">Create</a></i></li>
-								<li><i class="icon-folder-open" aria-hidden="true"><a ng-click='data="c"' data-toggle="tab" href="#product-list">List All</a></i></li>
-							</ul>
-						</li>
+                <div class="item active" style="background-image: url(img/slider/bg1.jpg)">
+                    <div class="container">
+                        <div class="row slide-margin">
+                            <div class="col-sm-6">
+                                <div class="carousel-content">
+                                    <h1 class="animation animated-item-1">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+                                    <h2 class="animation animated-item-2">Accusantium doloremque laudantium totam rem aperiam, eaque ipsa...</h2>
+                                    <a class="btn-slide animation animated-item-3" href="#">Read More</a>
+                                </div>
+                            </div>
 
-					</ul>
+                            <div class="col-sm-6 hidden-xs animation animated-item-4">
+                                <div class="slider-img">
+                                    <img src="img/slider/img1.png" class="img-responsive">
+                                </div>
+                            </div>
 
-			</nav>
+                        </div>
+                    </div>
+                </div><!--/.item-->
 
-			<!-- <ul class="nav nav-tabs">
-				<li class="sub-menu">
-					<a class="dropdown-toggle" data-toggle="dropdown"  href="#">Licence<i class='fa fa-angle-down'></i></a>
-					<ul class="dropdown-menu">
-						<li><i class="icon-file" aria-hidden="true"><a data-toggle="modal" data-target="#basicModal" >&nbsp;Create</a></i></li>
-						<li><i class="icon-folder-open" aria-hidden="true"><a data-toggle="tab" ng-click='data="a"' href="#licence-list">&nbsp;List All</a></i></li>
-					</ul>
-				</li>
-				 <li class="sub-menu">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Product  <span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><i class="icon-file" aria-hidden="true"><a data-toggle="modal" data-target="#largeModal">&nbsp;Create</a></i></li>
-						<li><i class="icon-folder-open" aria-hidden="true"><a ng-click='data="c"' data-toggle="tab" href="">&nbsp;List All</a></i></li>
-					</ul>
-				</li>
-			</ul> -->
-		</div>
-	</div>
-	</div>
-	</div>
+                <div class="item" style="background-image: url(img/slider/bg2.jpg)">
+                    <div class="container">
+                        <div class="row slide-margin">
+                            <div class="col-sm-6">
+                                <div class="carousel-content">
+                                    <h1 class="animation animated-item-1">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+                                    <h2 class="animation animated-item-2">Accusantium doloremque laudantium totam rem aperiam, eaque ipsa...</h2>
+                                    <a class="btn-slide animation animated-item-3" href="#">Read More</a>
+                                </div>
+                            </div>
 
-<div class="container">
-	 <div class="col-lg-12 content"  ng-init='data="h"'>
+                            <div class="col-sm-6 hidden-xs animation animated-item-4">
+                                <div class="slider-img">
+                                    <img src="img/slider/img2.png" class="img-responsive">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div><!--/.item-->
+
+                <div class="item" style="background-image: url(img/slider/bg3.jpg)">
+                    <div class="container">
+                        <div class="row slide-margin">
+                            <div class="col-sm-6">
+                                <div class="carousel-content">
+                                    <h1 class="animation animated-item-1">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+                                    <h2 class="animation animated-item-2">Accusantium doloremque laudantium totam rem aperiam, eaque ipsa...</h2>
+                                    <a class="btn-slide animation animated-item-3" href="#">Read More</a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 hidden-xs animation animated-item-4">
+                                <div class="slider-img">
+                                    <img src="img/slider/img3.png" class="img-responsive">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+            </div><!--/.carousel-inner-->
+        </div><!--/.carousel-->
+        <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
+            <i class="fa fa-chevron-left"></i>
+        </a>
+        <a class="next hidden-xs" href="#main-slider" data-slide="next">
+            <i class="fa fa-chevron-right"></i>
+        </a>
+    </section><!--/#main-slider-->
+		
+    <section id="feature" >
+        <div class="container">
+		
+		<div class="col-lg-12 content"  ng-init='data="h"'>
       <div class="text-center product-table"  ng-show='data==="h"' >
         <div class="row" >
 			      <div class="product-head">
@@ -143,7 +267,7 @@
                <div class="col-sm-3"> <p>{{person.provider}}</p></div>
                <div class="col-sm-3"><p>{{person.description}}</p></div>
                <div class="col-sm-3"><p><button type="button" class="btn btn-primary"><i class="icon-zoom-in"></i></button>
-                 <button type="button" class="btn btn-primary"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                 <button type="button" class="btn btn-primary"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
                  <button type="button" class="btn btn-primary"><i class="fa fa-edit"></i></button></p></div>
              </div>
             </div>
@@ -155,7 +279,7 @@
 	 <div class="text-center licence-table"  ng-show='data==="a"'>
 		<div class="row" >
 				<div class="heading" >
-					<div class="licence-head">
+					<div class="product-head">
 					  <h2>Licence</h2>
 					</div>
 				</div>
@@ -174,21 +298,20 @@
             <div class="col-sm-1"> <P>{{list.holder}}</P></div>
             <div class="col-sm-1"><P>{{list.issuer}}</P></div>
             <div class="col-sm-1"><P class="date" onclick="date"></P></div>
-            <div class="col-sm-1"><P>{{list.goodafter}}</P></div>
+            <div class="col-sm-1"><P>t</P></div>
             <div class="col-sm-1"><P>{{list.goodbefore}}</P></div>
             <div class="col-sm-1"><P>{{list.licence}}</P></div>
             <div class="col-sm-1"><P><button type="button" class="btn btn-primary"><i class="icon-zoom-in"></i></button>
-              <button type="button" class="btn btn-primary"><i class="fa fa-trash" aria-hidden="true"></i></button></P></div>
+              <button type="button" class="btn btn-primary"><i class="fa fa-trash-o" aria-hidden="true"></i></button></P></div>
           </div>
         </div>
       </div>
      </div>
 	  <!-- Licence Table -->
-
     <div class="text-center our-services"  ng-show='data==="c"' ng-controller="LicenceCtrl">
       <div class="row">
         <div class="heading" >
-          <div class="productlist-head">
+          <div class="product-head">
             <h2>Products</h2>
           </div>
         </div>
@@ -202,7 +325,7 @@
             <div class="col-sm-3"> <P>{{list.provider}}</P></div>
             <div class="col-sm-3"><P>{{list.description}}</P></div>
             <div class="col-sm-3"><P><button type="button" class="btn btn-primary"><i class="icon-zoom-in"></i></button>
-              <button type="button" class="btn btn-primary"><i class="fa fa-trash" aria-hidden="true"></i></button>
+              <button type="button" class="btn btn-primary"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
               <button type="button" class="btn btn-primary"><i class="icon-download-alt"></i></button>
               <button type="button" class="btn btn-primary"><i class="fa fa-edit"></i></button></p>
             </P></div>
@@ -213,8 +336,8 @@
 </div>
 </div>
 
-	<!-- Modal -->
-	<div class="modal fade" id="basicModal" tabindex="-1"  role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+
+<div class="modal fade" id="basicModal" tabindex="-1"  role="dialog" aria-labelledby="basicModal" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content" >
       <div class="modal-header">
@@ -306,95 +429,77 @@
     </div>
   </div>
 </div>
-  </section><!--/#services-->
-
-<!--  <form name="adduser" ng-submit="AddUser(adduser.$valid)">
-                    <div id="name-group" class="form-group-lg">
-                        <input type="text"
-                               required
-                               name="name"
-                               ng-model="userfullName"
-                               class="form-control"
-                               placeholder="Full Name">
-                    </div>
-                    <div id="name-group" class="form-group-lg">
-                        <input type="email"
-                               required
-                               name="email"
-                               ng-model="useremail"
-                               class="form-control"
-                               placeholder="Email">
-                    </div>
-                    <div id="name-group" class="form-group-lg">
-                        <input type="password"
-                               required
-                               ng-model="userpassword"
-                               name="password"
-                               class="form-control "
-                               placeholder="Password atleast 6 character">
-                    </div>
-
-                    <div id="name-group" class="form-group-lg">
-                        <button type="submit" class="form-control btn btn-info">Submit
-                       </button>
-                    </div>
-                </form> -->
-
-  <footer id="footer">
-
-        <p>2016 © Licence Generator.All Rights Reserved.</p>
-  </footer>
-       <!-- <div class="social-icons">
+	</div><!--/.container-->
+    </section><!--/#feature-->	
+		
+		
+		<div style="">
+	<div id="pollSlider-button"><i class="fa fa-bars" aria-hidden="true"></i>
+			<div class="pollSlider">
+			<div id="demo-wrapper" class="toggle">                           
           <ul>
-            <li><a class="envelope" href="#"><i class="fa fa-envelope"></i></a></li>
-            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-            <li><a class="tumblr" href="#"><i class="fa fa-tumblr-square"></i></a></li>
+              <li class="ming" data-path="styles/pink.css"></li>
+              <li class="lynch" data-path="styles/orange.css"></li>
+              <li class="pomegranate" data-path="styles/green.css"></li>
+              <li class="lightseagreen" data-path="styles/red.css"></li>
+              <li class="black-white" data-path="styles/yellow.css"></li>
+              <li class="rose" data-path="styles/lavander.css"></li>
           </ul>
-        </div>-->
+          <div class="clear" style="clear:both"></div>
+		  </div>
+			</div>
+</div>
+		 
+ </div>
+		
+<!-- <div id="sheetswitch"><a href='#' class='sheetswitch_prev'><img src="images/1leftarrow.png' /></a></div>
+<div style="clear:both;"></div> -->
+           
 
-   <!--  <div class="footer-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <p>&copy; 2016 Oxygen Theme.</p>
-          </div>
-          <div class="col-sm-6">
-            <p class="pull-right">Crafted by <a href="http://designscrazed.org/">Allie</a></p>
-          </div>
+    <footer id="footer" class="midnight-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; 2016 Licence Generator. All Rights Reserved.
+                </div>
+                <div class="col-sm-6">
+                    <ul class="pull-right">
+                        <li><a href="#">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Licence <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a data-toggle="modal" data-target="#basicModal" href="#">Create</a></li>
+                                <li><a href="pricing.html" data-toggle="tab" ng-click='data="a"'>List All</a></li>
+                          
+                            </ul>
+                        </li>
+						<li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a data-toggle="modal" data-target="#largeModal" href="#">Create</a></li>
+                                <li><a href="pricing.html" ng-click='data="c"' data-toggle="tab">List All</a></li>
+                          
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-    </div> -->
+    </footer><!--/#footer-->
+
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/jquery.prettyPhoto.js"></script>
+    <script src="scripts/jquery.isotope.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/wow.min.js"></script>
+	<script src="scripts/script.js"></script>
+	
+<script type="text/javascript" src="scripts/fitvids.js"></script>
+<script type="text/javascript" src="scripts/demo.js"></script>
+<script type="text/javascript" src="scripts/tipTip.js"></script>
 
 
-  <script type="text/javascript" src="scripts/jquery.js"></script>
-  <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
-  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-  <script type="text/javascript" src="scripts/jquery.inview.min.js"></script>
-  <script type="text/javascript" src="scripts/wow.min.js"></script>
-  <script type="text/javascript" src="scripts/mousescroll.js"></script>
-  <script type="text/javascript" src="scripts/smoothscroll.js"></script>
-  <script type="text/javascript" src="scripts/jquery.countTo.js"></script>
-  <script type="text/javascript" src="scripts/lightbox.min.js"></script>
-  <script type="text/javascript" src="scripts/main.js"></script>
-  <script type="text/javascript" src="scripts/script.js"></script>
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js">
-      </script>
-	  <script type="text/javascript" src="scripts/validation.js"></script>
-	  <script>
-$('nav li').hover(
-  function() {
-	  $('ul', this).stop().slideDown(200);
-  },
-	function() {
-    $('ul', this).stop().slideUp(200);
-  }
-);
-</script>
-<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+	
 </body>
 </html>
