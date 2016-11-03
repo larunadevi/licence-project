@@ -15,12 +15,11 @@
     <link href="styles/font-awesome.min.css" rel="stylesheet">
     <link href="styles/animate.min.css" rel="stylesheet">
     <link href="styles/prettyPhoto.css" rel="stylesheet">
- 
     <link href="styles/responsive.css" rel="stylesheet">
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 	<!-- <link rel="stylesheet" type="text/css" href="css/styles_pink.css" /> -->
- <link href="styles/main.css" rel="stylesheet" id="color-switcher"> 
-<script type = "text/javascript" 
+ <link href="styles/main.css" rel="stylesheet" id="color-switcher">
+<script type = "text/javascript"
          src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <style>
   .pollSlider{
@@ -28,12 +27,12 @@
     height:75px;
     background:#d2d2d2;
     width:110px;
-   
+
        margin-left: -110px;
 	    z-index: 999;
 }
 #pollSlider-button{
-   position:fixed; 
+   position:fixed;
     width:30px;
     background:#000;
     top:120px;
@@ -48,7 +47,7 @@ color: #fff;
     font-size: 20px;
 }
   </style>
- 
+
 <script>
 $(document).ready(function()
 {
@@ -67,7 +66,7 @@ $(document).ready(function()
 
   }); */
   $('#pollSlider-button').click(function() {
-	
+
 	if($(".pollSlider").css("margin-left") == "-110px")
     {
         $('.pollSlider').animate({"margin-left": '+=110'});
@@ -78,15 +77,15 @@ $(document).ready(function()
         $('.pollSlider').animate({"margin-left": '-=110'});
         //$('#pollSlider-button').animate({"margin-left": '+=200'});
     }
-  
+
   });
-  
- });     
+
+ });
 </script>
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
-    <![endif]-->       
+    <![endif]-->
    <!--  <link rel="shortcut icon" href="images/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/logo1.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/logo1.png">
@@ -109,7 +108,7 @@ $(document).ready(function()
                             <ul class="social-share">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                 <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
                                 <li><a href="#"><i class="fa fa-skype"></i></a></li>
                             </ul>
@@ -136,19 +135,19 @@ $(document).ready(function()
                     </button>
                     <a class="navbar-brand" href="index.html"><img src="img/logo1.png" alt="logo">Licence Generator</a>
                 </div>
-				
+
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li class="active" ><a href="index.html">Home</a></li>
                         <!-- <li><a href="about-us.html">About Us</a></li> -->
                         <!-- <li><a href="services.html">Services</a></li> -->
-                       
+
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Licence <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a data-toggle="modal" data-target="#basicModal" href="#">Create</a></li>
                                 <li><a href="pricing.html" data-toggle="tab" ng-click='data="a"'>List All</a></li>
-                          
+
                             </ul>
                         </li>
 						<li class="dropdown">
@@ -156,17 +155,17 @@ $(document).ready(function()
                             <ul class="dropdown-menu">
                                 <li><a data-toggle="modal" data-target="#largeModal" href="#">Create</a></li>
                                 <li><a href="pricing.html" ng-click='data="c"' data-toggle="tab">List All</a></li>
-                          
+
                             </ul>
                         </li>
-                                              
+
                     </ul>
                 </div>
             </div><!--/.container-->
         </nav><!--/nav-->
-		
+
     </header><!--/header-->
-		
+
     <section id="main-slider" class="no-margin">
         <div class="carousel slide">
             <ol class="carousel-indicators">
@@ -245,10 +244,10 @@ $(document).ready(function()
             <i class="fa fa-chevron-right"></i>
         </a>
     </section><!--/#main-slider-->
-		
+
     <section id="feature" >
         <div class="container">
-		
+
 		<div class="col-lg-12 content"  ng-init='data="h"'>
       <div class="text-center product-table"  ng-show='data==="h"' >
         <div class="row" >
@@ -430,13 +429,13 @@ $(document).ready(function()
   </div>
 </div>
 	</div><!--/.container-->
-    </section><!--/#feature-->	
-		
-		
+    </section><!--/#feature-->
+
+
 		<div style="">
 	<div id="pollSlider-button"><i class="fa fa-bars" aria-hidden="true"></i>
 			<div class="pollSlider">
-			<div id="demo-wrapper" class="toggle">                           
+			<div id="demo-wrapper" class="toggle">
           <ul>
               <li class="ming" data-path="styles/pink.css"></li>
               <li class="lynch" data-path="styles/orange.css"></li>
@@ -449,12 +448,12 @@ $(document).ready(function()
 		  </div>
 			</div>
 </div>
-		 
+
  </div>
-		
+
 <!-- <div id="sheetswitch"><a href='#' class='sheetswitch_prev'><img src="images/1leftarrow.png' /></a></div>
 <div style="clear:both;"></div> -->
-           
+
 
     <footer id="footer" class="midnight-blue">
         <div class="container">
@@ -470,7 +469,7 @@ $(document).ready(function()
                             <ul class="dropdown-menu">
                                 <li><a data-toggle="modal" data-target="#basicModal" href="#">Create</a></li>
                                 <li><a href="pricing.html" data-toggle="tab" ng-click='data="a"'>List All</a></li>
-                          
+
                             </ul>
                         </li>
 						<li class="dropdown">
@@ -478,7 +477,7 @@ $(document).ready(function()
                             <ul class="dropdown-menu">
                                 <li><a data-toggle="modal" data-target="#largeModal" href="#">Create</a></li>
                                 <li><a href="pricing.html" ng-click='data="c"' data-toggle="tab">List All</a></li>
-                          
+
                             </ul>
                         </li>
                     </ul>
@@ -494,12 +493,12 @@ $(document).ready(function()
     <script src="scripts/main.js"></script>
     <script src="scripts/wow.min.js"></script>
 	<script src="scripts/script.js"></script>
-	
+
 <script type="text/javascript" src="scripts/fitvids.js"></script>
 <script type="text/javascript" src="scripts/demo.js"></script>
 <script type="text/javascript" src="scripts/tipTip.js"></script>
 
 
-	
+
 </body>
 </html>

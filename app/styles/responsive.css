@@ -1,10 +1,10 @@
-/* lg */ 
+/* lg */
 @media (min-width: 1200px) {
- /* Make Navigation Toggle on Desktop Hover */
+  /* Make Navigation Toggle on Desktop Hover */
   .dropdown:hover .dropdown-menu {
-      display: block;
-      -webkit-animation: fadeInUp 400ms;
-      animation: fadeInUp 400ms;
+    display: block;
+    -webkit-animation: fadeInUp 400ms;
+    animation: fadeInUp 400ms;
   }
 
   #portfolio .row {
@@ -12,18 +12,18 @@
     margin-right: -10px;
   }
 
-  
+
 
 }
 
 /* md */
 @media (min-width: 992px) and (max-width: 1199px) {
-  
- /* Make Navigation Toggle on Desktop Hover */
+
+  /* Make Navigation Toggle on Desktop Hover */
   .dropdown:hover .dropdown-menu {
-      display: block;
-      -webkit-animation: fadeInUp 400ms;
-      animation: fadeInUp 400ms;
+    display: block;
+    -webkit-animation: fadeInUp 400ms;
+    animation: fadeInUp 400ms;
   }
 
   .navbar-nav > li {
@@ -47,12 +47,12 @@
     padding: 40px 10px 40px 30px;
   }
 
-  .feature-wrap h2, 
+  .feature-wrap h2,
   .single-services h2 {
     font-size: 18px;
   }
 
-  .feature-wrap h3, 
+  .feature-wrap h3,
   .single-services h3{
     font-size: 14px;
   }
@@ -102,9 +102,9 @@
 @media (min-width: 768px) and (max-width: 991px) {
   /* Make Navigation Toggle on Desktop Hover */
   .dropdown:hover .dropdown-menu {
-      display: block;
-      -webkit-animation: fadeInUp 400ms;
-      animation: fadeInUp 400ms;
+    display: block;
+    -webkit-animation: fadeInUp 400ms;
+    animation: fadeInUp 400ms;
   }
 
   .navbar-collapse {
@@ -124,13 +124,13 @@
     font-size: 20px;
   }
 
-  .tab-wrap .media .parrent.pull-left, 
+  .tab-wrap .media .parrent.pull-left,
   .media.accordion-inner .pull-left{
     clear: both;
     width: 100%;
   }
 
-  .tab-wrap .media .parrent.media-body, 
+  .tab-wrap .media .parrent.media-body,
   .media.accordion-inner .media-body{
     clear: both;
   }
@@ -140,7 +140,7 @@
   }
 
   .recent-work-wrap .overlay{
-   padding: 15px;
+    padding: 15px;
   }
 
   .recent-work-wrap .recent-work-inner h3 a {
@@ -150,7 +150,7 @@
   .sinlge-skill{
     width: 150px;
     height: 150px;
-  } 
+  }
 
   .sinlge-skill p em {
     font-size: 25px;
@@ -211,18 +211,18 @@
     font-size: 16px;
   }
 
-  .feature-wrap h2, 
+  .feature-wrap h2,
   .single-services h2 {
     font-size: 18px;
   }
 
-  .feature-wrap h3, 
+  .feature-wrap h3,
   .single-services h3{
     font-size: 14px;
   }
 
 
-  .media.accordion-inner .pull-left, 
+  .media.accordion-inner .pull-left,
   .media.accordion-inner .media-body{
     clear: both;
   }
@@ -245,11 +245,11 @@
   }
 
   #footer .col-sm-6{
-      text-align:center;
+    text-align:center;
   }
-  
-   #footer .pull-right{
-      float: none !important;
+
+  #footer .pull-right{
+    float: none !important;
   }
 
   .sinlge-skill {
@@ -258,7 +258,7 @@
     margin-bottom: 30px;
   }
 
-  .team .single-profile-top, 
+  .team .single-profile-top,
   .team .single-profile-bottom {
     margin-bottom: 30px;
   }
@@ -271,7 +271,7 @@
     font-size: 25px;
   }
 
-  .portfolio-item, 
+  .portfolio-item,
   #recent-works .col-xs-12.col-sm-4.col-md-3{
     padding:0 15px;
   }
@@ -291,13 +291,24 @@
   .post_reply_comments {
     padding-left: 20px;
   }
-    
 
+  .licence-table .col-sm-1 {
+    width: 33%;
+  }
 }
 
 /* XS Portrait */
-@media (max-width: 480px) {
-
+@media (min-width: 320px) {
+  .licence-table .col-sm-1 {
+    width: 100%;
+  }
 
 }
+@media (min-width: 480px) {
+  .licence-table .col-sm-1 {
+    width: 80%;
+  }
+
+}
+
 
